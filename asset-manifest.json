@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-project-RestAPI-Bootstrap/static/css/main.5f361e03.chunk.css",
-    "main.js": "/react-project-RestAPI-Bootstrap/static/js/main.d82303b5.chunk.js",
-    "main.js.map": "/react-project-RestAPI-Bootstrap/static/js/main.d82303b5.chunk.js.map",
+    "main.js": "/react-project-RestAPI-Bootstrap/static/js/main.33677108.chunk.js",
+    "main.js.map": "/react-project-RestAPI-Bootstrap/static/js/main.33677108.chunk.js.map",
     "runtime-main.js": "/react-project-RestAPI-Bootstrap/static/js/runtime-main.56141725.js",
     "runtime-main.js.map": "/react-project-RestAPI-Bootstrap/static/js/runtime-main.56141725.js.map",
     "static/css/2.2a86faee.chunk.css": "/react-project-RestAPI-Bootstrap/static/css/2.2a86faee.chunk.css",
     "static/js/2.3b824040.chunk.js": "/react-project-RestAPI-Bootstrap/static/js/2.3b824040.chunk.js",
     "static/js/2.3b824040.chunk.js.map": "/react-project-RestAPI-Bootstrap/static/js/2.3b824040.chunk.js.map",
     "index.html": "/react-project-RestAPI-Bootstrap/index.html",
-    "precache-manifest.c19533a57cd70c674b1a23daf6bcb1e4.js": "/react-project-RestAPI-Bootstrap/precache-manifest.c19533a57cd70c674b1a23daf6bcb1e4.js",
+    "precache-manifest.c1106d373e30b69724c39833a411f3b0.js": "/react-project-RestAPI-Bootstrap/precache-manifest.c1106d373e30b69724c39833a411f3b0.js",
     "service-worker.js": "/react-project-RestAPI-Bootstrap/service-worker.js",
     "static/css/2.2a86faee.chunk.css.map": "/react-project-RestAPI-Bootstrap/static/css/2.2a86faee.chunk.css.map",
     "static/css/main.5f361e03.chunk.css.map": "/react-project-RestAPI-Bootstrap/static/css/main.5f361e03.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.2a86faee.chunk.css",
     "static/js/2.3b824040.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.d82303b5.chunk.js"
+    "static/js/main.33677108.chunk.js"
   ]
 }
