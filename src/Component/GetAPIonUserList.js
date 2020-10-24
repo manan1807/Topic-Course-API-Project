@@ -16,7 +16,7 @@ function GetAPIonUserList() {
     return (
         <div>
             <h1>List function Component Using BootStrap</h1>
-
+            <h2><u>Data will be displayed, when API server is Up!</u></h2>
 
 
             <Table striped bordered hover>
