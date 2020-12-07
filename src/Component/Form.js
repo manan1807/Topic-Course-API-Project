@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 
 
+
 function Form(){
 
     const [name,setName] = useState("");
@@ -12,6 +13,7 @@ function Form(){
         //<FormTable tableData = {data}/>
        alert("Details has been added to the Users List");
         console.log(data);
+       
 
       }
     return(

@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import UsersList from './Component/UsersList'
 import Form from './Component/Form'
 import Home from './Component/Home'
+import Login from './Component/Login'
+import SignUp from './Component/SignUp'
 import GetAPIonUserList from './Component/GetAPIonUserList'
 import {Link,Route,BrowserRouter as Router,Switch} from 'react-router-dom'
-import {Navbar,Nav} from 'react-bootstrap'
+import {Navbar,Nav,Button} from 'react-bootstrap'
 function App() {
   return (
     <div className="App">
@@ -20,7 +21,10 @@ function App() {
       <Nav.Link href="#pricing"><Link to="/Component/Form">Form</Link></Nav.Link>
       <Nav.Link href="#pricing"><Link to="/Component/GetAPIonUserList">GETRequest</Link></Nav.Link>
     </Nav>
-   
+    <Nav>
+      <Nav.Link href="#signup"><Button variant="light"><Link to="/Component/SignUp">SignUp</Link></Button></Nav.Link>
+      <Nav.Link  href="#login"><Button variant="secondary"><Link to="/Component/Login">Login</Link></Button></Nav.Link>
+      </Nav>
   </Navbar>
 
   <Switch>
@@ -35,6 +39,12 @@ function App() {
           </Route>
           <Route path="/Component/GetAPIonUserList">
             <GetAPIonUserList />
+          </Route>
+          <Route path="/Component/Login">
+            <Login />
+          </Route>
+          <Route path="/Component/SignUp">
+            <SignUp />
           </Route>
         </Switch>  
         

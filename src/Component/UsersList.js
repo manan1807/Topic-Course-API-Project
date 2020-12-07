@@ -13,8 +13,6 @@ function UsersList() {
         <div>
             <h1>List function Component Using BootStrap</h1>
 
-
-
             <Table striped bordered hover>
                 <thead>
                     <tr>
