@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/react-project-RestAPI-Bootstrap/static/css/main.5f361e03.chunk.css",
-    "main.js": "/react-project-RestAPI-Bootstrap/static/js/main.33677108.chunk.js",
-    "main.js.map": "/react-project-RestAPI-Bootstrap/static/js/main.33677108.chunk.js.map",
+    "main.css": "/react-project-RestAPI-Bootstrap/static/css/main.77f11f98.chunk.css",
+    "main.js": "/react-project-RestAPI-Bootstrap/static/js/main.2ac3f0dc.chunk.js",
+    "main.js.map": "/react-project-RestAPI-Bootstrap/static/js/main.2ac3f0dc.chunk.js.map",
     "runtime-main.js": "/react-project-RestAPI-Bootstrap/static/js/runtime-main.56141725.js",
     "runtime-main.js.map": "/react-project-RestAPI-Bootstrap/static/js/runtime-main.56141725.js.map",
     "static/css/2.2a86faee.chunk.css": "/react-project-RestAPI-Bootstrap/static/css/2.2a86faee.chunk.css",
-    "static/js/2.3b824040.chunk.js": "/react-project-RestAPI-Bootstrap/static/js/2.3b824040.chunk.js",
-    "static/js/2.3b824040.chunk.js.map": "/react-project-RestAPI-Bootstrap/static/js/2.3b824040.chunk.js.map",
+    "static/js/2.1a91cf30.chunk.js": "/react-project-RestAPI-Bootstrap/static/js/2.1a91cf30.chunk.js",
+    "static/js/2.1a91cf30.chunk.js.map": "/react-project-RestAPI-Bootstrap/static/js/2.1a91cf30.chunk.js.map",
     "index.html": "/react-project-RestAPI-Bootstrap/index.html",
-    "precache-manifest.c1106d373e30b69724c39833a411f3b0.js": "/react-project-RestAPI-Bootstrap/precache-manifest.c1106d373e30b69724c39833a411f3b0.js",
+    "precache-manifest.774a82f383414b66bea259f3db1671cd.js": "/react-project-RestAPI-Bootstrap/precache-manifest.774a82f383414b66bea259f3db1671cd.js",
     "service-worker.js": "/react-project-RestAPI-Bootstrap/service-worker.js",
     "static/css/2.2a86faee.chunk.css.map": "/react-project-RestAPI-Bootstrap/static/css/2.2a86faee.chunk.css.map",
-    "static/css/main.5f361e03.chunk.css.map": "/react-project-RestAPI-Bootstrap/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.3b824040.chunk.js.LICENSE.txt": "/react-project-RestAPI-Bootstrap/static/js/2.3b824040.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/react-project-RestAPI-Bootstrap/static/media/logo.5d5d9eef.svg"
+    "static/css/main.77f11f98.chunk.css.map": "/react-project-RestAPI-Bootstrap/static/css/main.77f11f98.chunk.css.map",
+    "static/js/2.1a91cf30.chunk.js.LICENSE.txt": "/react-project-RestAPI-Bootstrap/static/js/2.1a91cf30.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.56141725.js",
     "static/css/2.2a86faee.chunk.css",
-    "static/js/2.3b824040.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.33677108.chunk.js"
+    "static/js/2.1a91cf30.chunk.js",
+    "static/css/main.77f11f98.chunk.css",
+    "static/js/main.2ac3f0dc.chunk.js"
   ]
 }
