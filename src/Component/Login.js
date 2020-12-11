@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-import {Redirect} from 'react-router-dom'
+import {Redirect, Link} from 'react-router-dom'
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -50,6 +50,7 @@ export default function Login() {
         <Button  size="lg" type="submit" disabled={!validateForm()} >
           Login
         </Button>
+        <div><Link to="/Component/SignUp">Don't Have an Account, Please SignUp!!!</Link></div>
       </Form>
       <UserL/>
     </div>

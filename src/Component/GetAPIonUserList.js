@@ -6,7 +6,7 @@ function GetAPIonUserList() {
     const [users,setUser] = useState([]);
         
     useEffect(()=>{
-        fetch("http://localhost:8080/topics").then((data)=>{
+        fetch("http://localhost:8081/topics").then((data)=>{
             data.json().then(result=>{
                 console.warn(result);
                   setUser(result)

@@ -18,8 +18,8 @@ function App() {
     <Nav className="mr-auto">
       <Nav.Link href="#home"> <Link to="/Component/Home">Home</Link></Nav.Link>
       <Nav.Link href="#features"><Link to="/Component/UsersList">UsersList</Link></Nav.Link>
-      <Nav.Link href="#pricing"><Link to="/Component/Form">Form</Link></Nav.Link>
-      <Nav.Link href="#pricing"><Link to="/Component/GetAPIonUserList">GETRequest</Link></Nav.Link>
+      <Nav.Link href="#pricing"><Link to="/Component/Form">Add Topic</Link></Nav.Link>
+      <Nav.Link href="#pricing"><Link to="/Component/GetAPIonUserList">Topics</Link></Nav.Link>
     </Nav>
     <Nav>
       <Nav.Link href="#signup"><Button variant="light"><Link to="/Component/SignUp">SignUp</Link></Button></Nav.Link>
