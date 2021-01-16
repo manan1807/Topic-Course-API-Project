@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/react-project-RestAPI-Bootstrap/static/css/main.77f11f98.chunk.css",
-    "main.js": "/react-project-RestAPI-Bootstrap/static/js/main.2ac3f0dc.chunk.js",
-    "main.js.map": "/react-project-RestAPI-Bootstrap/static/js/main.2ac3f0dc.chunk.js.map",
+    "main.js": "/react-project-RestAPI-Bootstrap/static/js/main.2b1f2509.chunk.js",
+    "main.js.map": "/react-project-RestAPI-Bootstrap/static/js/main.2b1f2509.chunk.js.map",
     "runtime-main.js": "/react-project-RestAPI-Bootstrap/static/js/runtime-main.56141725.js",
     "runtime-main.js.map": "/react-project-RestAPI-Bootstrap/static/js/runtime-main.56141725.js.map",
     "static/css/2.2a86faee.chunk.css": "/react-project-RestAPI-Bootstrap/static/css/2.2a86faee.chunk.css",
-    "static/js/2.1a91cf30.chunk.js": "/react-project-RestAPI-Bootstrap/static/js/2.1a91cf30.chunk.js",
-    "static/js/2.1a91cf30.chunk.js.map": "/react-project-RestAPI-Bootstrap/static/js/2.1a91cf30.chunk.js.map",
+    "static/js/2.6799fa1d.chunk.js": "/react-project-RestAPI-Bootstrap/static/js/2.6799fa1d.chunk.js",
+    "static/js/2.6799fa1d.chunk.js.map": "/react-project-RestAPI-Bootstrap/static/js/2.6799fa1d.chunk.js.map",
     "index.html": "/react-project-RestAPI-Bootstrap/index.html",
-    "precache-manifest.774a82f383414b66bea259f3db1671cd.js": "/react-project-RestAPI-Bootstrap/precache-manifest.774a82f383414b66bea259f3db1671cd.js",
+    "precache-manifest.d6519095aea5f6bf5f2b5d3e19b63a10.js": "/react-project-RestAPI-Bootstrap/precache-manifest.d6519095aea5f6bf5f2b5d3e19b63a10.js",
     "service-worker.js": "/react-project-RestAPI-Bootstrap/service-worker.js",
     "static/css/2.2a86faee.chunk.css.map": "/react-project-RestAPI-Bootstrap/static/css/2.2a86faee.chunk.css.map",
     "static/css/main.77f11f98.chunk.css.map": "/react-project-RestAPI-Bootstrap/static/css/main.77f11f98.chunk.css.map",
-    "static/js/2.1a91cf30.chunk.js.LICENSE.txt": "/react-project-RestAPI-Bootstrap/static/js/2.1a91cf30.chunk.js.LICENSE.txt"
+    "static/js/2.6799fa1d.chunk.js.LICENSE.txt": "/react-project-RestAPI-Bootstrap/static/js/2.6799fa1d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.56141725.js",
     "static/css/2.2a86faee.chunk.css",
-    "static/js/2.1a91cf30.chunk.js",
+    "static/js/2.6799fa1d.chunk.js",
     "static/css/main.77f11f98.chunk.css",
-    "static/js/main.2ac3f0dc.chunk.js"
+    "static/js/main.2b1f2509.chunk.js"
   ]
 }
