@@ -14,19 +14,47 @@
 }
 
 .App-header {
-  background-color: #232c3d;
+  background-color: #e9ecef;
   min-height: 95vh;
-  height: 40vmin;
+  height: 60vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(20px + 2vmin);
+  color: black; 
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.SignUp-Login{
+  justify-self: right;
+  align-self: right;
+}
+.signupLink{
+  text-decoration: none;
+  color: lightgray;
+}
+
+.loginLink{
+  text-decoration: none;
+  color: black;
+}
+.jumbotron{
+  height: 100vh;
+}
+
+.HomeButton{
+  margin-top: 100px;
+}
+
+.Navitem{
+  font-size: 1.8em !important;
+}
+.Backgroundcolor{
+  background-color: #e9ecef
 }
 
 

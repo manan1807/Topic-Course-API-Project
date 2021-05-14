@@ -1,57 +1,37 @@
 import React from 'react';
+import { Col, Row } from 'reactstrap';
 import './App.css';
-import UsersList from './Component/UsersList'
-import Form from './Component/Form'
-import Home from './Component/Home'
-import Login from './Component/Login'
-import SignUp from './Component/SignUp'
-import GetAPIonUserList from './Component/GetAPIonUserList'
-import {Link, Route,BrowserRouter as Router,Switch} from 'react-router-dom'
-import {Navbar,Nav,Button} from 'react-bootstrap'
+import Header from './Component/Header';
+import Home from './Component/Home';
+import { Route, BrowserRouter as Router } from 'react-router-dom'
+import UsersList from './Component/UsersList';
+import AddTopic from './Component/AddTopic';
+import GetAPIonUserList from './Component/ShowTopicAPI';
+import Login from './Component/Login';
+import SignUp from './Component/SignUp';
+
 function App() {
   return (
     <div className="App">
       <Router>
 
-      <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">Components</Navbar.Brand>
-    <Nav className="mr-auto">
-      <Nav.Link as={Link} href="#home" to="/Component/Home">Home</Nav.Link>
-      <Nav.Link as={Link} href="#features" to="/Component/UsersList">UsersList</Nav.Link>
-      <Nav.Link as={Link}href="#pricing" to="/Component/Form">Add Topic</Nav.Link>
-      <Nav.Link as={Link} href="#pricing" to="/Component/GetAPIonUserList">Topics</Nav.Link>
-    </Nav>
-    <Nav>
-    <Button variant="primary"> <Nav.Link as={Link} href="#signup"to="/Component/SignUp">SignUp</Nav.Link></Button>
-    <Button variant="success"><Nav.Link  as={Link} href="#login" to="/Component/Login">Login</Nav.Link></Button>
-      </Nav>
-  </Navbar>
+        <Row>
+          <Col>
+            <Header />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Route path="/react-project-RestAPI-Bootstrap" component={Home} exact />
+            <Route path="/user-list"  exact ><UsersList/></Route>
+            <Route path="/Component/AddTopic"  exact ><AddTopic/></Route>
+            <Route path="/showtopic-api" component={GetAPIonUserList} exact />
+            <Route path="/Component/Login" exact ><Login/></Route>
+            <Route path="/Component/SignUp" exact ><SignUp/></Route>
+          </Col>
+        </Row>
 
-  <Switch>
-          <Route path="/Component/Home">
-            <Home />
-          </Route>
-          <Route path="/Component/UsersList">
-            <UsersList />
-          </Route>
-          <Route path="/Component/Form">
-            <Form />
-          </Route>
-          <Route path="/Component/GetAPIonUserList">
-            <GetAPIonUserList />
-          </Route>
-          <Route path="/Component/Login">
-            <Login />
-          </Route>
-          <Route path="/Component/SignUp">
-            <SignUp />
-          </Route>
-        </Switch>  
-        
-        
-      {/* <UsersList/> */}
-      {/* <Form/> */}
-      </Router> 
+      </Router>
     </div>
   );
 }

@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import {Redirect, Link} from 'react-router-dom'
 
 export default function SignUp() {
+  useEffect(()=>{
+    document.title="SignUp Page"
+  }, [])
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
   const [email, setEmail] = useState("");
@@ -21,7 +24,7 @@ export default function SignUp() {
 
   function UserL(){
     if(actionform)
-    return <Redirect to = "/Component/Home"/>
+    return <Redirect to = "/Component/Login"/>
     else
     return <Redirect to = "/Component/SignUp"/>
   }
@@ -68,10 +71,10 @@ export default function SignUp() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <Button  size="lg" type="submit" disabled={!validateForm()} >
+        <Button  size="lg" type="submit" disabled={!validateForm()} variant="outline-dark">
           SignIn
         </Button>
-        <div><Link to="/Component/Login">Already SignIn, Please Login!!!</Link></div>
+        <div><Link to="/Component/Login" className="loginLink">Already SignIn, Please Login!!!</Link></div>
       </Form>
       <UserL/>
     </div>

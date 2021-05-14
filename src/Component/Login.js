@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-
-import {Redirect, Link} from 'react-router-dom'
+import { Redirect, Link } from 'react-router-dom';
 
 export default function Login() {
+  useEffect(() => {
+    document.title = "Login Page"
+  }, [])
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [actionform, setactionform] = useState(false);
@@ -18,11 +20,11 @@ export default function Login() {
     setactionform(true)
   }
 
-  function UserL(){
-    if(actionform)
-    return <Redirect to = "/Component/Home"/>
+  function UserL() {
+    if (actionform)
+      return <Redirect to="/" />
     else
-    return <Redirect to = "/Component/Login"/>
+      return <Redirect to="/Component/Login" />
   }
 
   return (
@@ -47,12 +49,12 @@ export default function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <Button  size="lg" type="submit" disabled={!validateForm()} >
+        <Button size="lg" type="submit" disabled={!validateForm()} className="mr-3" variant="outline-dark">
           Login
         </Button>
-        <div><Link to="/Component/SignUp">Don't Have an Account, Please SignUp!!!</Link></div>
+        <div><Link to="/Component/SignUp" className="loginLink" >Don't Have an Account, Please SignUp!!!</Link></div>
       </Form>
-      <UserL/>
+      <UserL />
     </div>
   );
 }

@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import {Redirect} from 'react-router-dom';
 import axios from 'axios';
+import { toast, ToastContainer } from "react-toastify";
 
-export default function TopicAdd() {
+export default function AddTopic() {
+  
+useEffect(()=>{
+  document.title="AddTopic"
+},[])
+
   const [id, setTopicId] = useState("");
   const [name, setTopicName] = useState("");
   const [description, setTopicDesc] = useState("");
@@ -17,6 +23,7 @@ export default function TopicAdd() {
   function handleSubmit(event) {
     event.preventDefault();
     setactionform(true)
+    toast("Topic has been added to the database");
     let data = {id, name, description}
     console.log(data)
     axios.post('http://localhost:8081/addtopic', data)
@@ -33,9 +40,9 @@ export default function TopicAdd() {
 
   function UserL(){
     if(actionform)
-    return <Redirect to = "/Component/GetAPIonUserList"/>
+    return <Redirect to = "/Component/ShowTopicAPI"/>
     else
-    return <Redirect to = "/Component/Form"/>
+    return <Redirect to = "/Component/AddTopic"/>
   }
 
   return (
@@ -48,7 +55,7 @@ export default function TopicAdd() {
             autoFocus
             type="number"
             value={id}
-            placeholder="Enter Topc ID"
+            placeholder="Enter Topic ID"
             onChange={(e) => setTopicId(e.target.value)}
           />
             </Form.Group>
@@ -73,9 +80,10 @@ export default function TopicAdd() {
           />
         </Form.Group>
         
-        <Button  size="lg" type="submit" disabled={!validateForm()} >
+        <Button type="submit" disabled={!validateForm()} className="btn-lg">
           ADD
         </Button>
+        <ToastContainer/>
         {/* <div><Link to="/Component/Login">Already SignIn, Please Login!!!</Link></div> */}
       </Form>
       <UserL/>
