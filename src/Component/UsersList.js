@@ -1,5 +1,7 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import { Button } from 'reactstrap'
 
 function UsersList() {
 
@@ -35,7 +37,10 @@ function UsersList() {
                                     <td>{item.name}</td>
                                     <td>{item.age}</td>
                                     <td>{item.city}</td>
-                                </tr>)}
+                                   <Link to = {`/viewCourses/20`} > <Button outline color="primary">View Courses</Button></Link>
+                                </tr>
+                                
+                                )}
 
                     </tbody>
                 </Table>

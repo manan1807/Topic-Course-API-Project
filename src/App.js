@@ -9,6 +9,7 @@ import AddTopic from './Component/AddTopic';
 import GetAPIonUserList from './Component/ShowTopicAPI';
 import Login from './Component/Login';
 import SignUp from './Component/SignUp';
+import { Courses } from './Component/ViewCourses';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/showtopic-api" component={GetAPIonUserList} exact />
             <Route path="/Component/Login" exact ><Login/></Route>
             <Route path="/Component/SignUp" exact ><SignUp/></Route>
+            <Route path="/viewCourses/:topicId" exact ><Courses/></Route>
           </Col>
         </Row>
 

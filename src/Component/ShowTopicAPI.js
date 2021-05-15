@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Table } from 'react-bootstrap'
+import {Button} from 'reactstrap'
+import {Link} from 'react-router-dom'
 
 function GetAPIonUserList() {
 
@@ -39,6 +41,8 @@ function GetAPIonUserList() {
                                 <td>{item.id}</td>
                                 <td>{item.name}</td>
                                 <td>{item.description}</td>
+                                <Link to = "/ViewCourses"> <Button outline color="primary">View Courses</Button></Link>
+
                             </tr>)}
 
                 </tbody>
