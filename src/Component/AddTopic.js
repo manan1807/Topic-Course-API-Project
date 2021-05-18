@@ -22,13 +22,14 @@ useEffect(()=>{
 
   function handleSubmit(event) {
     event.preventDefault();
-    setactionform(true)
+    
     toast("Topic has been added to the database");
     let data = {id, name, description}
     console.log(data)
     axios.post('http://localhost:8081/addtopic', data)
         .then(response => {
             console.log(response)
+            setactionform(true)
             alert("Topic has been added to the List!, Check it into Topic tab")
             })
             .catch(error => {

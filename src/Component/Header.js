@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom'
 import { Navbar, NavItem, Nav, Button } from 'reactstrap'
 
 export default function Header() {
+  
+
   return (
-    <div>
+    <div className="NavBar">
      
       <Navbar style={{backgroundColor: '#563d7c'}}  className="py-3 py-lg-4">
         <Nav  className="container-fluid">
@@ -24,7 +26,7 @@ export default function Header() {
           <Nav className="SignUp-Login Navitem">
             <NavItem className="mr-auto">
             <Link to="/Component/SignUp" className="ml-3">
-              <Button color="warning" className="mr-3" outline className="btn-lg">SignUp</Button>
+              <Button color="warning"  outline className="mr-3 btn-lg">SignUp</Button>
             </Link>
             </NavItem>
             <NavItem className="mr-auto">
@@ -34,6 +36,7 @@ export default function Header() {
             </NavItem>
           </Nav>
        </Nav>
+      
       </Navbar>
     </div>
   )

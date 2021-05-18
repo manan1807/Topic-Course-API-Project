@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import {Redirect, Link} from 'react-router-dom'
+import axios from 'axios';
 
 export default function SignUp() {
   useEffect(()=>{
@@ -19,7 +20,19 @@ export default function SignUp() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    setactionform(true)
+    
+    let data = {name, age, email, password}
+    console.log(data)
+    axios.post('http://localhost:8081/signup', data)
+        .then(response => {console.log(response)
+           alert("User has been added to the DB!, Redirect to login")
+           setactionform(true)
+            })
+            .catch(error => {
+              console.log(error)
+            })
+            ;
+  
   }
 
   function UserL(){

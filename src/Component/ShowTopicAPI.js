@@ -5,14 +5,14 @@ import {Link} from 'react-router-dom'
 
 function GetAPIonUserList() {
 
-    const [users, setUser] = useState([]);
+    const [topics, settopics] = useState([]);
 
     useEffect(() => {
         document.title = "Topics"
         fetch("http://localhost:8081/topics").then((data) => {
             data.json().then(result => {
                 console.warn(result);
-                setUser(result)
+                settopics(result)
             })
         })
     }, [])
@@ -30,18 +30,18 @@ function GetAPIonUserList() {
                         <th>ID</th>
                         <th>Name</th>
                         <th>Description</th>
+                        <th>Select to View Courses</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     {
-                        users.map((item, i) =>
-                            <tr key={i}>
-
-                                <td>{item.id}</td>
-                                <td>{item.name}</td>
-                                <td>{item.description}</td>
-                                <Link to = "/ViewCourses"> <Button outline color="primary">View Courses</Button></Link>
+                        topics.map((topic) =>
+                            <tr >
+                                <td>{topic.id}</td>
+                                <td>{topic.name}</td>
+                                <td>{topic.description}</td>
+                                <Link to = {`/ViewCourses/${topic.id}`}> <Button outline color="primary">View Courses</Button></Link>
 
                             </tr>)}
 
